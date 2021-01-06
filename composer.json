@@ -1,0 +1,27 @@
+{
+    "name": "navikt/coding-standard",
+    "type": "library",
+    "description": "PHP Coding Standard for NAV IT",
+    "homepage": "https://github.com/navikt/coding-standard-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Christer Edvartsen",
+            "email": "christer.edvartsen@nav.no"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NAVIT\\CodingStandard\\": "src/"
+        }
+    },
+    "support": {
+        "issues": "https://github.com/navikt/coding-standard-php/issues",
+        "source": "https://github.com/navikt/coding-standard-php",
+        "docs": "https://github.com/navikt/coding-standard-php"
+    },
+    "require": {
+        "php": "^7.4",
+        "friendsofphp/php-cs-fixer": "^2.17"
+    }
+}
