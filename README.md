@@ -31,7 +31,7 @@ You can adjust the `$finder` instance if you wish to include/exclude other direc
 
 Now you can run the following command to check the coding standard in your project:
 
-    php-cs-fixer fix --dry-run --diff --diff-format udiff
+    php-cs-fixer fix --dry-run --diff
 
 You can drop the `--dry-run` option to let the tool fix your files automatically.
 
@@ -62,13 +62,13 @@ jobs:
         run: composer install --prefer-dist
 
       - name: Check coding standard
-        run: php-cs-fixer fix --dry-run --diff --diff-format udiff
+        run: php-cs-fixer fix --dry-run --diff
 ```
 
 ## PHP-CS-Fixer and PHP-8
 
 To run PHP-CS-Fixer on PHP-8 you will need to set an environment variable that forces the php-cs-fixer command to ignore the environment requirement:
 
-    PHP_CS_FIXER_IGNORE_ENV=1 php-cs-fixer fix --dry-run --diff --diff-format udiff
+    PHP_CS_FIXER_IGNORE_ENV=1 php-cs-fixer fix --dry-run --diff
 
 PHP-8 support in PHP-CS-Fixer is tracked here: https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues/4702.

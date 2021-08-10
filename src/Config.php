@@ -11,7 +11,7 @@ final class Config extends PhpCsConfig
         $this->setRiskyAllowed(true);
     }
 
-    public function getRules()
+    public function getRules(): array
     {
         return [
             '@PSR12' => true,

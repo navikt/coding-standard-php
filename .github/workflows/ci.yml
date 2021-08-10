@@ -18,4 +18,4 @@ jobs:
         run: composer install --prefer-dist
 
       - name: Check coding standard
-        run: php-cs-fixer fix --dry-run --diff --diff-format udiff
+        run: php-cs-fixer fix --dry-run --diff
