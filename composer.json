@@ -21,7 +21,9 @@
         "docs": "https://github.com/navikt/coding-standard-php"
     },
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": "^7.4 || ^8.0"
+    },
+    "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.0"
     }
 }
