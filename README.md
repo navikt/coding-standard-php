@@ -8,7 +8,7 @@ First, add this package as a development dependency to your project:
 
     composer require --dev navikt/coding-standard
 
-then, create a PHP-CS-Fixer configuration file named `.php_cs.dist` local to your repository that includes the following:
+then, create a PHP-CS-Fixer configuration file named `.php-cs-fixer.php` local to your repository that includes the following:
 
 ```php
 <?php declare(strict_types=1);

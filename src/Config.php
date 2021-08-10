@@ -14,7 +14,7 @@ final class Config extends PhpCsConfig
     public function getRules()
     {
         return [
-            '@PSR2' => true,
+            '@PSR12' => true,
             'return_type_declaration' => [
                 'space_before' => 'none',
             ],
@@ -33,16 +33,20 @@ final class Config extends PhpCsConfig
                 'import_functions' => true,
             ],
             'declare_strict_types' => true,
-            'trailing_comma_in_multiline_array' => true,
+            'trailing_comma_in_multiline' => true,
             'array_indentation' => true,
             'array_syntax' => [
                 'syntax' => 'short',
             ],
             'compact_nullable_typehint' => true,
             'no_spaces_around_offset' => [
-                'inside',
-                'outside',
+                'positions' => [
+                    'inside',
+                    'outside',
+                ],
             ],
+            'blank_line_after_opening_tag' => false,
+            'single_blank_line_before_namespace' => false,
         ];
     }
 }
